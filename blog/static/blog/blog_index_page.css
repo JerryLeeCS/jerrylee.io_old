@@ -1,0 +1,46 @@
+body{
+    background: #F0F0F0 !important;
+}
+
+headerWrap{
+    display: inline-block;
+}
+
+h1{
+    padding: 16px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.btn{
+    position: left;
+}
+
+
+.card-columns a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto', sans-serif;  
+}
+
+.card-columns a:hover{
+    color: black;
+}
+
+.card{
+    border: none;
+}
+
+.card > img{
+    width: 100%;
+    padding: 0px;
+    margin-bottom: 6px;
+}
+
+.card-block{
+    text-align: center;
+}
+
+.card:hover{
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}

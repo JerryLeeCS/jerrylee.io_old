@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% load wagtailcore_tags wagtailimages_tags %}
+
+{% block body_class %}template-homepage{% endblock %}
+
+{% load static %}
+
+
+
+{% block content %}
+<head>
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto:300" rel="stylesheet">   
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="{% static "home/home_page.css" %}">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+    {% with page.background_image as background %}
+        {% if background %}
+            {% image background original as tmp_image %}
+    <div class="hero-image" style="background-image: url({{ tmp_image.url }});">
+        {% endif %}
+    {% endwith %}
+        <div class="hero-text">
+            <h1 class="anim-typewriter">Hi, I am Jerry</h1>
+            <p>Web Developer and Blogger in Los Angeles</p>
+            <div class="d-flex flex-column btnGroup">
+                <div class="p-2"><a href="{% pageurl blog %}" class="menuButton">Blog</a></div>
+                <div class="p-2"><a href="{% pageurl works %}" class="menuButton">Works</a></div>
+                <div class="p-2"><a href="{{page.resume_file.url }}" class="menuButton">Resume</a></div>
+                <div class="p-2"><a href="mailto:jerryleeatwork@gmail.com" target="_top" class="menuButton">Contact</a></div>
+            </div>
+            <div class="social-media-row">
+                    <a href="{{page.snapchatURL }}" target="_blank" ><img src="{% static "home/snapchatIcon.png" %}" class="social-media-icon" id="snapchatIcon"></a>      
+                    <a href="{{page.instagramURL }}" target="_blank" ><img src="{% static "home/instagramIcon.png" %}" class="social-media-icon" id="instagramIcon"></a>      
+            </div>
+        </div>
+    </div>
+
+    </body>
+{% endblock %}
