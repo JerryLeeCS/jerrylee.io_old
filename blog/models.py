@@ -1,7 +1,7 @@
 from django import forms
 from django.db import models
 
-from modelcluster.fields import ParentalKey, ParentalManyToManyField
+from modelcluster.fields import ParentalManyToManyField
 
 from wagtail.wagtailsnippets.models import register_snippet
 

@@ -25,27 +25,11 @@
   <body>
     <h1>Blog</h1>
   
-
   <div class="container">
     <div class="card-columns">
       {% for post in blogpages %}
         {% with post=post.specific %}
-          <a href="{% pageurl post %}">
-            <div class="card">
-            {% with post.post_image as main_image %}
-            {% if main_image %}
-              {% image main_image width-350 as tmp_image %}
-              <img src="{{ tmp_image.url }}" width="{{ tmp_image.width }}"
-              height="{{ tmp_image.height }}" alt="{{ tmp_image.title }}" class="img-fluid" />
-          
-            {% endif %}
-            {% endwith %}
-            <div class="card-block">
-                <h5 class="card-title"> {{ post.title }} </h3>
-            </div>
 
-            </div> 
-          </a>
           
         {% endwith %}
       {% endfor %}
