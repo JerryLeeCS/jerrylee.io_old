@@ -11,6 +11,10 @@ SECRET_KEY = '+#-_#grl)40x8*amsc)sz==s54hl8ke7c3nqb9^qh6-xws(c@3'
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
+STATIC_URL = '/static/'
+
+MEDIA_URL = '/media/'
+
 
 try:
     from .local import *
