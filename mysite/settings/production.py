@@ -1,7 +1,6 @@
 from __future__ import absolute_import, unicode_literals
 
 import os
-import decouple import config
 
 SECRET_KEY = config('SECRET_KEY')
 
