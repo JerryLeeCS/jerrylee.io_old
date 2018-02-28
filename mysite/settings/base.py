@@ -32,8 +32,8 @@ INSTALLED_APPS = [
     'blog',
     'works',
 
-    'wagtail.wagtailforms',
-    'wagtail.wagtailredirects',
+    'wagtail.contrib.forms',
+    'wagtail.contrib.redirects',
     'wagtail.wagtailembeds',
     'wagtail.wagtailsites',
     'wagtail.wagtailusers',
