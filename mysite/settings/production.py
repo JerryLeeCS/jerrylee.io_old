@@ -22,8 +22,7 @@ DATABASES['default'] =  dj_database_url.config()
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 # Allow all host headers
-ALLOWED_HOSTS = ['jerrylee.io', 'heroku.com']
-
+ALLOWED_HOSTS = ['jerrylee.io', 'herokuapp.com']
 
 COMPRESS_OFFLINE = True
 COMPRESS_CSS_FILTERS = [
