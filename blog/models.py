@@ -3,7 +3,7 @@ from django.db import models
 
 from modelcluster.fields import ParentalManyToManyField
 
-from wagtail.wagtailsnippets.models import register_snippet
+from wagtail.snippets.models import register_snippet
 
 from wagtail.core.models import Page, Orderable
 from wagtail.core.fields import RichTextField
