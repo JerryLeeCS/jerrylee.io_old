@@ -4,18 +4,18 @@
 This website is build with Django and Wagtail CMS. 
 
 ### Front Page
-![alt text] (https://github.com/JerryLeeCS/jerrylee.io/blob/master/Screenshot%202018-07-25%2012.45.08.png)
-![alt text] (https://github.com/JerryLeeCS/jerrylee.io/blob/master/Screenshot%202018-07-25%2012.47.16.png)
+<img src="Front.png"  width="800">
+<img src="FrontMobile.png" width="500">
 
 ### Blog Page
-![alt text] (https://github.com/JerryLeeCS/jerrylee.io/blob/master/Screenshot%202018-07-25%2012.45.24.png)
-![alt text] (https://github.com/JerryLeeCS/jerrylee.io/blob/master/Screenshot%202018-07-25%2012.45.44.png)
-![alt text] (https://github.com/JerryLeeCS/jerrylee.io/blob/master/Screenshot%202018-07-25%2012.45.54.png)
-![alt text] (https://github.com/JerryLeeCS/jerrylee.io/blob/master/Screenshot%202018-07-25%2012.46.10.png)
+
+<img src="BlogIndex.png"  width="800">
+<img src="Blog.png"  width="800">
+<img src="Blog2.png"  width="800">
+<img src="BlogMobile.png" width="400">
 
 ### Work Page
-![alt text] (https://github.com/JerryLeeCS/jerrylee.io/blob/master/Screenshot%202018-07-25%2012.46.31.png)
-![alt text] (https://github.com/JerryLeeCS/jerrylee.io/blob/master/Screenshot%202018-07-25%2012.46.39.png)
-![alt text] (https://github.com/JerryLeeCS/jerrylee.io/blob/master/Screenshot%202018-07-25%2012.46.50.png)
-
+<img src="Work.png"  width="800">
+<img src="WorkDrawer.png"  width="800">
+<img src="WorkMobile.png"  width="400">
 
